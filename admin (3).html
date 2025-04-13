@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Add Questions</title>
+</head>
+<body>
+    <h2>Add Quiz Question</h2>
+
+    <input type="text" id="question-input" placeholder="Enter question"><br>
+    <input type="text" id="option1" placeholder="Option 1"><br>
+    <input type="text" id="option2" placeholder="Option 2"><br>
+    <input type="text" id="option3" placeholder="Option 3"><br>
+    <input type="text" id="option4" placeholder="Option 4"><br>
+
+    <label>Correct Answer:</label>
+    <select id="correct-answer">
+        <option value="0">Option 1</option>
+        <option value="1">Option 2</option>
+        <option value="2">Option 3</option>
+        <option value="3">Option 4</option>
+    </select>
+
+    <!-- ✅ Save Question Button (Previously Missing) -->
+    <button id="saveQuestionBtn">Save Question</button>
+
+    <h3>Saved Questions</h3>
+    <ul id="question-list"></ul>
+
+    <h2>Add Student</h2>
+    <input type="text" id="student-name" placeholder="Student Name"><br>
+    <input type="text" id="student-id" placeholder="Student ID"><br>
+    <button id="saveStudentBtn">Save Student</button>
+
+    <h3>Student List</h3>
+    <ul id="student-list"></ul>
+
+    <script type="module" src="admin.js"></script>
+</body>
+</html>
